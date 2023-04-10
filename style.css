@@ -1,0 +1,61 @@
+html {
+    background-color: #0b1a1a;
+    color: rgba(255, 255, 240, 0.5);
+    font-family: Monospace, Courier;
+}
+
+body {
+    padding: 0 10px;
+    max-height: 100%;
+    width: max-content;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    color: darkturquoise;
+}
+
+button,
+input {
+    background-color: darkslategray;
+    color: ivory;
+    margin: 0.4rem;
+    padding: 0.2em;
+    transition: 1s;
+}
+
+button,
+input[type="submit"] {
+    text-align: center;
+}
+
+:is(button, input[type="submit"]):hover {
+    background-color: darkcyan;
+}
+
+#keyinput::file-selector-button {
+    display: none;
+}
+
+#keyinput::before {
+    content: "Load key file";
+    display: inline-block;
+    cursor: pointer;
+    background: teal;
+
+    padding: 0.2rem;
+    margin-right: 0.2rem;
+
+    border-radius: 0.2rem;
+    border: 2px solid rgba(255, 255, 255, 0.419);
+}
