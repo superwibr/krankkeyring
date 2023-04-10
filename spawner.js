@@ -6,6 +6,6 @@
         winy = winh;
 
     // summon window
-    const win = window.open("https://superwibr.github.io/krankkeyrig/keyring.html", "krankkeyring", `width=${winw},height=${winh},left=${winx},top=${winy}`)
+    const win = window.open("https://superwibr.github.io/krankkeyring/keyring.html", "krankkeyring", `width=${winw},height=${winh},left=${winx},top=${winy}`)
     console.log(win);
 })();
